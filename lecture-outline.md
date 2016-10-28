@@ -2,9 +2,9 @@
 
 ## Brief Overview
 0. (10min) Introductions and logistics
-0. (30min) Explanation of "What is materials science?"
-0. (30min) Explanation of "What is (materials) informatics?"
-0. (40min) Interactive examples of applying materials informatics techniques
+0. (40min) Explanation of "What is materials science?"
+0. (40min) Explanation of "What is (materials) informatics?"
+0. (20min) Interactive examples of applying materials informatics techniques
 0. (10min) Recap and closing remarks
 
 ## Detailed Lesson Plan
