@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="580px" height="318px">
+  <g transform="translate(60,20)">
+    <line stroke="#ACACAC" stroke-width="1" x1="0" y1="250" x2="500" y2="250" />
+    <line stroke="#ACACAC" stroke-width="1" x1="0" y1="0" x2="0" y2="250" />
+    <text font-family="Lucida Grande" font-size="12" fill="#000000" x="0" y="0" text-anchor="middle" transform="translate(-28, 125), rotate(-90)">energy</text>
+	<text font-family="Lucida Grande" font-size="12" fill="#000000" x="250" y="278" text-anchor="middle">state</text>
+	<path fill="none" stroke="#008000" stroke-width="2" d="M40,0 C42,20,100,120,140,120 C180,120,180,80,220,80 C260,80,280,210,340,210 C400,210,460,0,460,0" />
+	<g>
+	  <circle fill="#008000" stroke="none" cx="64" cy="24" r="12" opacity="0.25" />
+	  <circle fill="none" stroke="#008000" stroke-width="1" cx="64" cy="24" r="12" opacity="0.5" />
+	  <text font-family="Lucida Grande" font-size="12" fill="#000000" x="64" y="28" text-anchor="middle">1</text>
+	</g>
+	<g>
+	  <circle fill="#008000" stroke="none" cx="140" cy="108" r="12" opacity="0.25" />
+	  <circle fill="none" stroke="#008000" stroke-width="1" cx="140" cy="108" r="12" opacity="0.5" />
+	  <text font-family="Lucida Grande" font-size="12" fill="#000000" x="140" y="112" text-anchor="middle">2</text>
+	</g>
+	<g>
+	  <circle fill="#008000" stroke="none" cx="220" cy="68" r="12" opacity="0.25" />
+	  <circle fill="none" stroke="#008000" stroke-width="1" cx="220" cy="68" r="12" opacity="0.5" />
+	  <text font-family="Lucida Grande" font-size="12" fill="#000000" x="220" y="72" text-anchor="middle">3</text>
+	</g>
+	<g>
+	  <circle fill="#008000" stroke="none" cx="280" cy="132" r="12" opacity="0.25" />
+	  <circle fill="none" stroke="#008000" stroke-width="1" cx="280" cy="132" r="12" opacity="0.5" />
+	  <text font-family="Lucida Grande" font-size="12" fill="#000000" x="280" y="136" text-anchor="middle">4</text>
+	</g>
+	<g>
+	  <circle fill="#008000" stroke="none" cx="340" cy="198" r="12" opacity="0.25" />
+	  <circle fill="none" stroke="#008000" stroke-width="1" cx="340" cy="198" r="12" opacity="0.5" />
+	  <text font-family="Lucida Grande" font-size="12" fill="#000000" x="340" y="202" text-anchor="middle">5</text>
+	</g>
+	<g>
+	  <circle fill="#008000" stroke="none" cx="410" cy="102" r="12" opacity="0.25" />
+	  <circle fill="none" stroke="#008000" stroke-width="1" cx="410" cy="102" r="12" opacity="0.5" />
+	  <text font-family="Lucida Grande" font-size="12" fill="#000000" x="410" y="106" text-anchor="middle">6</text>
+	</g>
+  </g>
+</svg>

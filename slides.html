@@ -27,19 +27,25 @@
       # Agenda
 
       1. Introductions
+
       2. Materials science
+
       3. Informatics
+
       4. Materials informatics
+
       5. Playing with some data
 
       ---
 
       # Class format
 
-      - Lots of interactive discussion and questions
+      - Lots of **interactive discussion and questions**
+
       - Some very basic coding and making plots at the end
-      - All course materials (code, slides, notes) available for free online at [link]
+
       - Ask questions at any time (but please raise hand)
+
       - If you need to briefly leave for any reason (e.g. water / snack / bathroom / phone call), feel free to do so without asking and feel free to come back in (don't worry about interrupting)
 
       ---
@@ -47,20 +53,25 @@
       # Introduction
 
       - A little about me
+
       - Round-table student intros
 
       ---
 
       # What is Materials Science?
 
-      [ Show picture of different size scales; ask students what they think they are looking at ]
-      [ A really core idea in matsci is linking between size scales ]
+      <img src="img/doe_scales.jpg" width="600">
 
       ---
 
       # What are some core concepts of Materials Science?
 
-      - Can anyone think of core concepts for more familiar fields, like physics / biology / chemistry?
+      - Can anyone think of core concepts for more familiar fields, like **physics / biology / chemistry**?
+
+      - How would you answer the question, "what is physics?" (or biology, or chemistry)
+
+      ???
+
       [ Give examples like F=ma, biological cells, periodic table of elements ]
 
       ---
@@ -68,6 +79,10 @@
       # Crystal structures
 
       - What is a crystal? Can anyone give examples?
+
+      <img src="img/crystal.png" width="300">
+
+      ???
 
       [Show picture of crystal lattice and/or unit cell]
 
@@ -77,13 +92,22 @@
 
       # DISCUSSION: Which ones are crystals?
 
-      [ Show a few images, macro/micro/atomic scale ]
-
       - Which of these are crystals? Which aren't? Why? See if you can convince your neighbor.
+
+      <img src="img/mat_01.jpg" width="200">
+      <img src="img/mat_02.jpg" width="300">
+
+      ???
+
+      [ Show a few images, macro/micro/atomic scale ]
 
       ---
 
       # Thermodynamic stability
+
+      <img src="img/metastable_block.jpg" width="600">
+
+      ???
 
       [Show pictures of something like lego blocks or whatever. What is stable? What is unstable? Why?]
       [Show idea of energy landscapes. What is stable? Unstable? Why?]
@@ -95,33 +119,55 @@
 
       # DISCUSSION: Which ones are stable / metastable / unstable?
 
+      - Which of these are stable? Metastable? Unstable? Why? See if you can convince your neighbor.
+
+      <img src="img/stability_ball.svg" width="600">
+
+      ???
+
       [ Show a few images, both materials and non-materials examples ]
 
-      - Which of these are stable? Metastable? Unstable? Why? See if you can convince your neighbor.
+      ---
+
+      # DISCUSSION: Diamond stability?
+
+      - Are diamonds stable? Metastable? Unstable? Why?
+
+      <img src="img/diamond.png" width="600">
+
+      ???
+
+      - They're metastable, but why don't we see them decomposing? See if anyone can guess KINETICS / REACTION RATES
 
       ---
 
       # Kinetic barriers
 
+      <img src="img/rollingboulder.gif" width="600">
+
+      ???
+
       [ Use something like analogy of going from point A to point B but there's a hill in the way ]
       [ Shift analogy to energy landscape -- which point should be lower? What does the hill represent? ]
 
       [Useful because it tells us HOW/WHY MATERIALS CHANGE (ESPECIALLY SPEED/RATE)]
-      [Maybe show a picture example]
 
       ---
 
       # DISCUSSION: Fast and slow kinetics
 
-      [ Give examples like diamond into graphite, or stirring a solution to mix something, or dissolving at different temperatures ]
+      - How can you speed up a reaction? Why? See if you can convince your neighbor.
 
-      - Which of these are faster/slower? Why? See if you can convince your neighbor.
+      ???
+
+      [ Temperatures, catalysts, concentrations, surface area, ... ]
+
 
       ---
 
       # Material properties
 
-      At the end of the day, we often care about what **measureable properties** materials have. One general example is mechanical strength (e.g., doesn't break easily if you pull on it).
+      At the end of the day, we often care about what **properties** materials have. One general example is mechanical strength (e.g., doesn't break easily if you pull on it).
 
       - Can you think of other examples of useful properties? What kinds of materials might have these properties?
 
@@ -129,15 +175,21 @@
 
       # DISCUSSION: Thinking about properties
 
-      [ Show some images. Which is electrically conductive? Which is really buoyant? High compressive strength? High tensile strength? etc. ]
+      - What **properties** do you think this material has?
+
+
+      <img src="img/aerogel.jpg" width="300">
 
       ---
 
       # Recap of materials science
 
       - We want to link between size scales [Why?]
+
       - Thermodynamic stability tells us... [???]
+
       - Kinetics tells us about... [???]
+
       - Usually we're very interested in a material's PROPERTIES
 
       ---
@@ -191,19 +243,57 @@
 
       ---
 
-      # An example: Classification
+      # An easy example: Binary Classification
 
       [ Go back to the wood/metal density problem ]
 
       ---
 
-      # Materials informatics: the dataset
+      # A cool machine learning example
+
+
+
+      ---
+
+      # Intro to Python
+
+      - Simple programming language
+        ```python
+        from weather_functions import is_rainy_outside
+        from outdoors_functions import is_sprinkler_on
+
+        def should_bring_umbrella():
+          return bool( is_rainy_outside() or is_sprinkler_on() )
+
+        if should_bring_umbrella():
+          bring_umbrella = True
+        ```
+
+      ---
+
+      #Plotting is really simple
+        ```python
+        from plot_functions import plot_scatter
+        from dataset import plot_data
+
+        plot_scatter(plot_data['x'], plot_data['y'])
+        ```
+
+      ---
+
+      # Materials informatics: the datasets
+
+      - Periodic Table of Elements:
+
+      - https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json
 
       [ Explain dataset schema ]
 
       ---
 
       # Plotting the data and looking for patterns
+
+      - We will use https://studio.azureml.net/ as our Python environment
 
       [ Explain plotting setup ]
 
