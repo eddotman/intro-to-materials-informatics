@@ -44,7 +44,7 @@
 
       - Some very basic coding and making plots at the end
 
-      - Ask questions at any time (but please raise hand)
+      - Ask questions at any time (but please raise your hand)
 
       - If you need to briefly leave for any reason (e.g. water / snack / bathroom / phone call), feel free to do so without asking and feel free to come back in (don't worry about interrupting)
 
@@ -54,7 +54,37 @@
 
       - A little about me
 
-      - Round-table student intros
+      - Round-table student intros (name? grade? favorite subject?)
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/stm.jpg" width="600">
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/graphene.jpg" width="600">
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/graphene-desalination.jpg" width="600">
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/lotus.jpg" width="600">
+
+      ---
+
+      # What is Materials Science?
+
+      <img src="img/matsci.svg" width="600">
 
       ---
 
@@ -202,28 +232,56 @@
 
       # What about a data-first approach?
 
-      - Suppose you have 100 different blocks made from 100 different materials, and you've never heard of 'density' or 'volume' or 'atoms.' How would you find and describe which blocks are heavier?
+      - Imagine you have some metal blocks and some wooden blocks, and you've never heard of 'density' or 'atoms'. Could you come up with 'rules' to describe which blocks should be heavier?
 
-      - Now imagine half of these materials are metals, and the other half are various kinds of wood. Could you come up with 'rules' to describe which half should be heavier? (and remember you don't know what 'density' is)
+      <img src="img/wood_block.jpg" width="300"> <img src="img/metal_block.jpg" width="300">
 
       ---
 
       # Data-first isn't always so silly
 
-      - If I throw a ball in an arc, how do I figure out where it lands? [show projectile motion diagram]
-      [ Show equations, but gloss over details and just show that you can get "x = something" ]
+      - If I throw a ball in an arc, how do I figure out where it lands?
 
-      - How old were you when you learned to throw/catch a baseball or football? Did you use algebra or physics? How did you learn?
+      <img src="img/basketball.png" width="500">
+
+      ---
+
+      # Data-first isn't always so silly
+
+      - If I throw a ball in an arc, how do I figure out where it lands?
+
+      <img src="img/projectile_motion.png" width="500">
 
       ---
 
       # DISCUSSION: Finding patterns in the data
 
-      [ Show a table of some data and get people to try to predict a value based on extrapolating ]
+      X1 = `[ 01, 02, 03, 04, 05 ]`
+
+      Y1 = `[ 01, 04, ??, 16, 25 ]`
+
+      ***
+
+      X2 = `[ 01, 02, 03, 04, 05, 06, 07 ]`
+
+      Y2 = `[ 01, 01, 02, 03, 05, 08, ?? ]`
+
+      ***
+
+      X3 = `[ 04, 05, 07, 03, 24, 12, 35, 18 ]`
+
+      Y3 = `[ 01, 00, 00, 00, 01, 01, 00, ?? ]`
 
       ---
 
-      # Usually we want to find **models** from our data
+      # We want to find **models** from our data
+
+      - What is the line here? What determines where it should be drawn?
+      - If the temperature rises to 30C, how much money will you make?
+
+      <img src="img/icecream.gif" width="500">
+
+      ???
 
       [Show diagram of 'best fit lines' and other easy examples]
       [Qualitatively explain the idea of error and fit, prediction and generalization]
@@ -232,7 +290,7 @@
 
       #DISCUSSION: But models aren't always so easy to find...
 
-      [ Show underfit, good fit, overfit - get people to guess/explain which is which ]
+      <img src="img/fitting.png" width="600">
 
       ---
 
@@ -243,25 +301,47 @@
 
       ---
 
-      # An easy example: Binary Classification
+      # A cool machine learning example
 
-      [ Go back to the wood/metal density problem ]
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/V1eYniJ0Rnk" frameborder="0" allowfullscreen></iframe>
 
       ---
 
       # A cool machine learning example
 
-
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qv6UVOQ0F44" frameborder="0" allowfullscreen></iframe>
 
       ---
 
       # Intro to Python
 
-      - Simple programming language
+      - Popular general-purpose programming language in the sciences (and other fields too)
+
+      ```python
+      #A function ACCEPTS ARGUMENTS and gives you BACK A VALUE
+
+      def add_numbers(a, b):
+        sum = a + b
+        return sum
+
+      #Most programs use CONDITIONAL LOGIC
+
+      if add_numbers(1, 2) > 6:
+        print ( "The number was bigger than 6" )
+      else:
+        print ( "The number wasn't bigger than 6" )
+      ```
+
+      ---
+
+      # Intro to Python
+
         ```python
+        #You can IMPORT additional FUNCTIONS that other people have created
         from weather_functions import is_rainy_outside
         from outdoors_functions import is_sprinkler_on
 
+        #And you can build your own functions using the IMPORTED FUNCTIONS
         def should_bring_umbrella():
           return bool( is_rainy_outside() or is_sprinkler_on() )
 
@@ -273,6 +353,7 @@
 
       #Plotting is really simple
         ```python
+        #This is a 'pretend' example, but the real thing is very close to this
         from plot_functions import plot_scatter
         from dataset import plot_data
 
@@ -287,23 +368,49 @@
 
       - https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json
 
-      [ Explain dataset schema ]
-
       ---
 
       # Plotting the data and looking for patterns
 
       - We will use https://studio.azureml.net/ as our Python environment
 
-      [ Explain plotting setup ]
+      ```python
+      #Import libraries for data loading and plotting (and assign shorthand names to the libraries)
+      import pandas as pd
+      import matplotlib.pyplot as plt
+
+      #Read data and change rows/columns
+      dataframe = pd.read_json("https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json")
+      dataframe = dataframe.transpose()
+
+      #Print out column names
+      print ( dataframe.keys() )
+      ```
+
+      ***
+
+      ```python
+      #Set up plot and control view limits
+      dataframe.plot("atomic_mass", "density", kind="scatter")
+      plt.xlim(0, 300)
+      plt.ylim(0, 40)
+      ```
 
       ---
 
-      # Examples
+      # Thanks for listening! Any last questions?
 
-      [ Show a couple code examples ]
+      - You can get access the slides at these links if you ever want to revisit the lecture material:
 
+      (Raw content)
 
+      https://github.com/eddotman/intro-to-materials-informatics
+
+      ***
+
+      (Online slide viewer)
+
+      http://htmlpreview.github.io/?https://raw.githubusercontent.com/eddotman/intro-to-materials-informatics/master/slides.html
 
 
       </menu>
