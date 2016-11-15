@@ -48,7 +48,7 @@
 
       - Lots of **interactive discussion and questions**
 
-      - Some very basic coding and making plots at the end
+      - Some basic coding and interactive demos at the end
 
       - Ask questions at any time (but please raise your hand)
 
@@ -61,6 +61,11 @@
       - A little about me
 
       - Round-table student intros (name? grade? favorite subject?)
+
+      ---
+
+      class: center, middle
+      # Materials Science
 
       ---
 
@@ -100,15 +105,8 @@
 
       ---
 
-      # What are some core concepts of Materials Science?
-
-      - Can anyone think of core concepts for more familiar fields, like **physics / biology / chemistry**?
-
-      - How would you answer the question, "what is physics?" (or biology, or chemistry)
-
-      ???
-
-      [ Give examples like F=ma, biological cells, periodic table of elements ]
+      class: center, middle
+      # Structures and Properties of Materials
 
       ---
 
@@ -157,7 +155,44 @@
 
       ---
 
-      # Thermodynamic stability
+      # Unit cells can get tricky
+
+      - How many atoms are in this one?
+
+      <img src="img/unit_cell.png" width="600">
+
+      ---
+
+      # Atomic scale structure
+
+      <img src="img/li_ion.jpg" width="600">
+
+      ---
+
+      # Nanostructures
+
+      <img src="img/nanowires.png" width="400">
+
+      ---
+
+      # Material properties
+
+      At the end of the day, we often care about what **properties** materials have. One general example is mechanical strength (e.g., doesn't break easily if you pull on it).
+
+      - Can you think of other examples of useful properties? What kinds of materials might have these properties?
+
+      ---
+
+      # DISCUSSION: Thinking about properties
+
+      - What **properties** do you think this material has?
+
+
+      <img src="img/aerogel.jpg" width="300">
+
+      ---
+
+      # Thermodynamic stability: What can / can't we make?
 
       <img src="img/metastable_block.jpg" width="600">
 
@@ -208,55 +243,24 @@
 
       ---
 
-      # DISCUSSION: Fast and slow kinetics
-
-      - How can you speed up a reaction? Why? See if you can convince your neighbor.
-
-      ???
-
-      [ Temperatures, catalysts, concentrations, surface area, ... ]
-
-
-      ---
-
-      # Material properties
-
-      At the end of the day, we often care about what **properties** materials have. One general example is mechanical strength (e.g., doesn't break easily if you pull on it).
-
-      - Can you think of other examples of useful properties? What kinds of materials might have these properties?
-
-      ---
-
-      # DISCUSSION: Thinking about properties
-
-      - What **properties** do you think this material has?
-
-
-      <img src="img/aerogel.jpg" width="300">
-
-      ---
-
       # Recap of materials science
 
-      - We want to link between size scales [Why?]
+      - We want to link between size scales (and between structure / properties)
 
-      - Thermodynamic stability tells us... [???]
-
-      - Kinetics tells us about... [???]
+      - Thermodynamic stability tells us what we can make
 
       <img src="img/matsci.png" width="400">
 
       ---
 
-      # Informatics - what is it?
-
-      - Let's contrast with 'first principles' reasoning: Which is heavier? A block of iron or a block of styrofoam (of same sizes)? Why?
+      class: center, middle
+      # Informatics and Machine Learning
 
       ---
 
-      # What about a data-first approach?
+      # Informatics - what is it?
 
-      - Imagine you have some metal blocks and some wooden blocks, and you've never heard of 'density' or 'atoms'. Could you come up with 'rules' to describe which blocks should be heavier?
+      - Let's contrast with 'first principles' reasoning: Which is heavier? A block of iron or a block of wood (of same sizes)? Why?
 
       <img src="img/wood_block.jpg" width="300"> <img src="img/metal_block.jpg" width="300">
 
@@ -275,6 +279,18 @@
       - If I throw a ball in an arc, how do I figure out where it lands?
 
       <img src="img/projectile_motion.png" width="500">
+
+      ---
+
+      # First principles VS data-driven
+
+      - The goal is (often) **prediction** in both cases
+
+      - First principles is used when a **theory** is able to predict the results
+
+      - Data-driven methods are used when we must guess a model from **past experience** (or past data)
+
+      <img src="img/schrodinger.jpg" width="500">
 
       ---
 
@@ -301,6 +317,7 @@
       # We want to find **models** from our data
 
       - What is the line here? What determines where it should be drawn?
+
       - If the temperature rises to 30C, how much money will you make?
 
       <img src="img/icecream.gif" width="500">
@@ -308,6 +325,7 @@
       ???
 
       [Show diagram of 'best fit lines' and other easy examples]
+
       [Qualitatively explain the idea of error and fit, prediction and generalization]
 
       ---
@@ -321,7 +339,17 @@
       # "Machine learning" and "artificial intelligence"
 
       - Hot topics these days: but what are these fields about?
+
       - Lots of things, but one major theme is learning **models from the data**
+
+
+      ## Kinds of machine learning
+
+      1. Unsupervised
+
+      2. Supervised
+
+      3. Semi-supervised
 
       ---
 
@@ -358,6 +386,19 @@
       # A cool machine learning example
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/qv6UVOQ0F44" frameborder="0" allowfullscreen></iframe>
+
+      ---
+
+      # A materials informatics research example
+
+      <img src="img/svm.png" width="500">
+
+      - (Source: 10.3389/fmats.2016.00019)
+
+      ---
+
+      class: center, middle
+      # Interactive Demos and Coding
 
       ---
 
@@ -410,7 +451,7 @@
 
       ---
 
-      # Materials informatics: the datasets
+      # Materials informatics: a dataset
 
       - Periodic Table of Elements:
 
@@ -461,8 +502,16 @@
       - **Thermoelectrics**: Materials where temperature differences produce electric currents (or vice versa)
 
       - **ZT**: Describes "how good" a material is at producing thermoelectric effect
-      
+
       - **HHI**: Describes market share (higher = more monopolistic)
+
+      ---
+
+      # A (generic) neural net demo
+
+      - http://playground.tensorflow.org
+
+      - Try playing around with it
 
       ---
 
