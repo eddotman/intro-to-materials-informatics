@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to Materials Informatics</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+      class: center, middle
+
+      # Materials Informatics
+
+      ---
+
+      # Class goals
+
+      - Give a survey of materials science, and machine learning
+
+      - Provide **intuition** to help understand advanced concepts
+
+      ---
+
+      # Agenda
+
+      1. Introductions
+
+      2. Materials science
+
+      3. Informatics and machine learning
+
+      ---
+
+      # Class format
+
+      - Lots of **interactive discussion and questions**
+
+      - Ask questions at any time (but please raise your hand)
+
+      ---
+
+      # Introduction
+
+      - A little about me
+
+      - About the class (Who is from Boston area? Massachusetts State? USA? Beyond USA?)
+
+      ---
+
+      class: center, middle
+      # Materials Science
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/stm.jpg" width="600">
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/graphene.jpg" width="600">
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/graphene-desalination.jpg" width="600">
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/lotus.jpg" width="600">
+
+      ---
+
+      # What is Materials Science?
+
+      <img src="img/matsci.png" width="600">
+
+      ---
+
+      # What is Materials Science?
+
+      <img src="img/doe_scales.jpg" width="600">
+
+      ---
+
+      class: center, middle
+      # Structures and Properties of Materials
+
+      ---
+
+      # Crystal structures
+
+      - What is a crystal? Can anyone give examples?
+
+      <img src="img/crystal.png" width="300">
+
+      ???
+
+      [Show picture of crystal lattice and/or unit cell]
+
+      [Useful because it lets us DESCRIBE MATERIALS]
+
+      ---
+
+      # DISCUSSION: Which ones are crystals?
+
+      - Which of these are crystals? Which aren't? Why? See if you can convince your neighbor.
+
+      <img src="img/mat_01.jpg" width="200">
+      <img src="img/mat_02.jpg" width="300">
+
+      ???
+
+      [ Show a few images, macro/micro/atomic scale ]
+
+      ---
+
+      # Atomic scale structure
+
+      <img src="img/li_ion.jpg" width="600">
+
+      ---
+
+      # Nanostructures
+
+      <img src="img/nanowires.png" width="400">
+
+      ---
+
+      # Material properties
+
+      At the end of the day, we often care about what **properties** materials have. One general example is mechanical strength (e.g., doesn't break easily if you pull on it).
+
+
+      ---
+
+      # DISCUSSION: Thinking about properties
+
+      - What **properties** do you think this material has?
+
+
+      <img src="img/aerogel.jpg" width="300">
+
+      ---
+
+      # Recap of materials science
+
+      - We want to link between size scales (and between structure / properties)
+
+      <img src="img/matsci.png" width="400">
+
+      ---
+
+      class: center, middle
+      # Informatics and Machine Learning
+
+      ---
+
+      # Informatics - what is it?
+
+      - Let's contrast with 'first principles' reasoning: Which is heavier? A block of iron or a block of wood (of same sizes)? Why?
+
+      <img src="img/wood_block.jpg" width="300"> <img src="img/metal_block.jpg" width="300">
+
+      ---
+
+      # Data-first isn't always so silly
+
+      - If I throw a ball in an arc, how do I figure out where it lands?
+
+      <img src="img/basketball.png" width="500">
+
+      ---
+
+      # Data-first isn't always so silly
+
+      - If I throw a ball in an arc, how do I figure out where it lands?
+
+      <img src="img/projectile_motion.png" width="500">
+
+      ---
+
+      # First principles VS data-driven
+
+      - The goal is (often) **prediction** in both cases
+
+      - First principles is used when a **theory** is able to predict the results
+
+      - Data-driven methods are used when we must guess a model from **past experience** (or past data)
+
+      <img src="img/schrodinger.jpg" width="500">
+
+      ---
+
+      # DISCUSSION: Finding patterns in the data
+
+      X1 = `[ 01, 02, 03, 04, 05 ]`
+
+      Y1 = `[ 01, 04, ??, 16, 25 ]`
+
+      ***
+
+      X2 = `[ 01, 02, 03, 04, 05, 06, 07 ]`
+
+      Y2 = `[ 01, 01, 02, 03, 05, 08, ?? ]`
+
+      ***
+
+      X3 = `[ 04, 05, 07, 03, 24, 12, 35, 18 ]`
+
+      Y3 = `[ 01, 00, 00, 00, 01, 01, 00, ?? ]`
+
+      ---
+
+      # We want to find **models** from our data
+
+      - What is the line here? What determines where it should be drawn?
+
+      - If the temperature rises to 30C, how much money will you make?
+
+      <img src="img/icecream.gif" width="500">
+
+      ???
+
+      [Show diagram of 'best fit lines' and other easy examples]
+
+      [Qualitatively explain the idea of error and fit, prediction and generalization]
+
+      ---
+
+      #DISCUSSION: But models aren't always so easy to find...
+
+      <img src="img/fitting.png" width="600">
+
+      ---
+
+      # "Machine learning" and "artificial intelligence"
+
+      - Hot topics these days: but what are these fields about?
+
+      - Lots of things, but one major theme is learning **models from the data**
+
+
+      ## Kinds of machine learning
+
+      1. Unsupervised
+
+      2. Supervised
+
+      3. Semi-supervised
+
+      ---
+
+      # Unsupervised learning
+
+      <img src="img/unsup.png" width="600">
+
+      ---
+
+      # Supervised learning
+
+      <img src="img/sup.png" width="600">
+
+      ---
+
+      # Semi-supervised learning
+
+      <img src="img/semisup1.png" width="600">
+
+      ---
+
+      # Semi-supervised learning
+
+      <img src="img/semisup2.png" width="600">
+
+      ---
+
+      # A cool machine learning example
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/V1eYniJ0Rnk" frameborder="0" allowfullscreen></iframe>
+
+      ---
+
+      # A cool machine learning example
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qv6UVOQ0F44" frameborder="0" allowfullscreen></iframe>
+
+      ---
+
+      # A materials informatics research example
+
+      <img src="img/svm.png" width="500">
+
+      - (Source: 10.3389/fmats.2016.00019)
+
+      ---
+
+      # What we learned today
+
+      - Materials science: studying "stuff" by understanding atoms, nano/microstructures, properties, etc.
+      - Materials informatics: studying materials using data (usually machine learning techniques)
+
+      ---
+
+      # Thanks for listening! Any last questions?
+
+      - You can get access the slides at these links if you ever want to revisit the lecture material:
+
+      (Raw content)
+
+      https://github.com/eddotman/intro-to-materials-informatics
+
+      ***
+
+      (Online slide viewer)
+
+      http://htmlpreview.github.io/?https://raw.githubusercontent.com/eddotman/intro-to-materials-informatics/master/slides-gr78-version.html
+
+
+      </menu>
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
