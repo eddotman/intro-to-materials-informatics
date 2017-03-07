@@ -13,6 +13,10 @@
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
     </style>
   </head>
@@ -87,15 +91,21 @@
 
       ---
 
-      # What is Materials Science?
+      # What is Materials Science? Some examples...
 
-      <img src="img/matsci.png" width="600">
+      <img src="img/cans.jpg" width="600">
+
+      ---
+
+      # What is Materials Science? Some examples...
+
+      <img src="img/bricks.png" width="600">
 
       ---
 
       # What is Materials Science?
 
-      <img src="img/doe_scales.jpg" width="600">
+      <img src="img/matsci.png" width="600">
 
       ---
 
@@ -118,12 +128,11 @@
 
       ---
 
-      # DISCUSSION: Which ones are crystals?
+      # Which ones are crystals?
 
       - Which of these are crystals? Which aren't? Why? See if you can convince your neighbor.
 
-      <img src="img/mat_01.jpg" width="200">
-      <img src="img/mat_02.jpg" width="300">
+      <img src="img/mat_02.jpg" width="600">
 
       ???
 
@@ -137,20 +146,9 @@
 
       ---
 
-      # Nanostructures
-
-      <img src="img/nanowires.png" width="400">
-
-      ---
-
       # Material properties
 
-      At the end of the day, we often care about what **properties** materials have. One general example is mechanical strength (e.g., doesn't break easily if you pull on it).
-
-
-      ---
-
-      # DISCUSSION: Thinking about properties
+      We often are interested in what **properties** materials have...
 
       - What **properties** do you think this material has?
 
@@ -176,7 +174,7 @@
 
       - Let's contrast with 'first principles' reasoning: Which is heavier? A block of iron or a block of wood (of same sizes)? Why?
 
-      <img src="img/wood_block.jpg" width="300"> <img src="img/metal_block.jpg" width="300">
+      <img style="display:inline" src="img/wood_block.jpg" width="300"> <img style="display:inline" src="img/metal_block.jpg" width="300">
 
       ---
 
@@ -208,31 +206,22 @@
 
       ---
 
-      # DISCUSSION: Finding patterns in the data
+      # Finding patterns in the data
 
-      X1 = `[ 01, 02, 03, 04, 05 ]`
+      <br>
 
-      Y1 = `[ 01, 04, ??, 16, 25 ]`
+      ## 2, 4, 8, 16, 32, ??
 
-      ***
+      <br>
 
-      X2 = `[ 01, 02, 03, 04, 05, 06, 07 ]`
 
-      Y2 = `[ 01, 01, 02, 03, 05, 08, ?? ]`
-
-      ***
-
-      X3 = `[ 04, 05, 07, 03, 24, 12, 35, 18 ]`
-
-      Y3 = `[ 01, 00, 00, 00, 01, 01, 00, ?? ]`
+      ## 1, 1, 2, 3, 5, 8, 13, ??
 
       ---
 
       # We want to find **models** from our data
 
-      - What is the line here? What determines where it should be drawn?
-
-      - If the temperature rises to 30C, how much money will you make?
+      - What does the line tell you?
 
       <img src="img/icecream.gif" width="500">
 
@@ -293,27 +282,39 @@
 
       # A cool machine learning example
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/V1eYniJ0Rnk" frameborder="0" allowfullscreen></iframe>
-
-      ---
-
-      # A cool machine learning example
-
       <iframe width="560" height="315" src="https://www.youtube.com/embed/qv6UVOQ0F44" frameborder="0" allowfullscreen></iframe>
 
       ---
 
       # A materials informatics research example
 
-      <img src="img/svm.png" width="500">
+      <img src="img/research_fig_1.png" width="700">
 
-      - (Source: 10.3389/fmats.2016.00019)
+      - (Source: 10.1038/ncomms14282)
+
+      ---
+
+      # A materials informatics research example
+
+      <img src="img/research_fig_2.png" width="700">
+
+      - (Source: 10.1038/nphys4035)
+
+      ---
+
+      # A materials informatics research example
+
+
+      <img src="img/research_fig_3.png" width="700">
+
+      - (Source: 10.1038/srep19375)
 
       ---
 
       # What we learned today
 
       - Materials science: studying "stuff" by understanding atoms, nano/microstructures, properties, etc.
+
       - Materials informatics: studying materials using data (usually machine learning techniques)
 
       ---
